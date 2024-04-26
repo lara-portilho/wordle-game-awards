@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings 0",
-    "services:up": "sudo docker compose -f ./infra/compose.yaml up -d",
-    "services:down": "sudo docker compose -f ./infra/compose.yaml down"
+    "services:up": "docker compose -f ./infra/compose.yaml up -d",
+    "services:down": "docker compose -f ./infra/compose.yaml down"
   },
   "dependencies": {
     "@repo/ui": "*",
@@ -25,7 +25,10 @@
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.3.3"
   }
 }
