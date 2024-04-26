@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "services:up": "sudo docker compose -f ./infra/compose.yaml up -d",
+    "services:down": "sudo docker compose -f ./infra/compose.yaml down"
   },
   "dependencies": {
     "@repo/ui": "*",
