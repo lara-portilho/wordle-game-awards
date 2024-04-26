@@ -1,0 +1,6 @@
+services:
+  database:
+    image: mongo
+    restart: always
+    env_file:
+      - "../.env.development"
